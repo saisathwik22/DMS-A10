@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>Document Management System</title>
+		<style>
+                  *{
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                  }
+			body{
+				background: url("backgr.jpg");
+				background-size: cover;
+                    
+				color: black;
+				margin: 0;
+				}
+			#header{
+				height: 110px;
+                        background-color: black;
+				display: flex;
+				align-items: center;
+                        justify-content: space-between;
+				}
+			#header ul li{
+				display: inline-block;
+				margin: 0px 30px;
+				margin-top: 10px;
+				padding: 5px 20px;
+                        font-size: 21px;	
+                        font-weight: bold;	
+				}
+
+                  .headerContent {
+                        display: flex;
+                        justify-content: space-evenly;
+                        gap: 100px;
+                        padding-right: 60px;
+                        /* padding: 5px 60px; */
+                        font-size: 25px;
+                  }
+                  .headerContent a{
+                        padding: 5px 20px;
+                  }
+                  .headerContent a:hover {
+                        font-weight: bold;
+                        border: 1px solid white;
+                        border-radius: 3px;
+                        padding: 5px 20px;
+                  }
+                  .logoContent {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        padding-top: 10px;
+                  }
+                  .logoName{
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        font-weight: bold;
+                        font-size: 45px;
+                        
+                  }
+			a{
+				color: white;
+				text-decoration: none;
+				}
+			#body{
+				height: 500px;
+                        color: white;
+				/* background: rgba(67, 75, 133, 0.77); */
+				}
+			#footer{
+				display: flex;
+				height: 300px;
+				
+				/* background: rgba(168, 101, 101, 0.5); */
+				}
+
+			
+			
+		</style>
+
+	</head>
+	<body>
+		<div id="header">
+			<div class="logoContent">
+                        <image src="logo.png" height="120">
+                              <a href="homepage.html" class="logoName">DMS</a>
+                  </div>
+			<div class="headerContent">
+				<a href="user.html">User</a>
+				<a href="access.html">Access</a>
+				<a href="document.html">Document</a>
+                  </div>
+		</div>
+		<div id="body">
+			<center>
+				<h2 style="padding-top: 100px; padding-bottom: 50px; font-size: 50px;">Welcome to Document Management System</h2>
+				<p style="width: 80%; font-size: xx-large;">
+                              Document Management System is used to handle the documents. Documents can be created, organized and stored. The main objective of this project is to maintain all the documents of a user or firm.
+
+				</p>
+				
+			</center>
+		</div>
+		<div id="footer">
+			
+				
+		</div>
+	</body>
+</html>
