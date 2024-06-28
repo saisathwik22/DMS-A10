@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Management System</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: url("backgr.jpg");
+        background-size: cover;
+        color: black;
+        margin: 0;
+      }
+
+      #header {
+        height: 110px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #header ul li {
+        display: inline-block;
+        margin: 0px 30px;
+        margin-top: 10px;
+        padding: 5px 20px;
+        font-size: 21px;
+        font-weight: bold;
+      }
+
+      .headerContent {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 100px;
+        padding-right: 60px;
+        font-size: 25px;
+      }
+
+      .headerContent a {
+        padding: 5px 20px;
+      }
+
+      .headerContent a:hover {
+        font-weight: bold;
+        border: 1px solid white;
+        border-radius: 3px;
+        padding: 5px 20px;
+      }
+
+      .logoContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding-top: 10px;
+      }
+
+      .logoName {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-weight: bold;
+        font-size: 45px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      #body {
+        height: 500px;
+        color: white;
+      }
+
+      #footer {
+        display: flex;
+        height: 300px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        width: 100%;
+      }
+
+      .signupForm {
+        background-color: #1714146b;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 251, 251, 0.1);
+        width: 500px;
+        text-align: center;
+      }
+
+      .signupForm h2 {
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+
+      .signupForm table {
+        width: 100%;
+      }
+
+      .signupForm th {
+        color: #fff;
+        text-align: left;
+        padding-bottom: 10px;
+        font-size: 20px;
+      }
+
+      .signupForm td {
+        padding-bottom: 10px;
+      }
+
+      .signupForm input[type="text"],
+      .signupForm input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .signupForm input[type="radio"],
+      .signupForm input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      .signupForm input[type="submit"] {
+        background-color: #598de7;
+        color: rgb(253, 253, 253);
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 19px;
+        font-weight: 700;
+        width: 100%;
+      }
+
+      .signupForm input[type="submit"]:hover {
+        background-color: #1546a8;
+      }
+
+      .gender,
+      .language {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+      }
+
+      .gender label,
+      .language label {
+        color: white;
+        font-size: 18px;
+      }
+      .login-link {
+        margin-top: 15px;
+        color: white;
+        font-size: 18px;
+      }
+
+      .login-link a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .login-link a:hover {
+        text-decoration: underline;
+        color: #598de7;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div class="logoContent">
+        <img src="logo.png" height="120" />
+        <a href="homepage.html" class="logoName">DMS</a>
+      </div>
+      <div class="headerContent">
+        <a href="homepage.html">Home</a>
+        <a href="userAccess.html">User</a>
+        <a href="adminAccess.html">Admin</a>
+        <a href="document.html">Document</a>
+      </div>
+    </div>
+    <div id="body">
+      <div class="container">
+        <div class="signupForm">
+          <h2>User Register</h2>
+          <table>
+            <tr>
+              <th style="color: white">Name</th>
+              <td>
+                <input type="text" name="name" placeholder="enter your name" />
+              </td>
+            </tr>
+            <tr>
+              <th style="color: white">Username</th>
+              <td>
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="enter username"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th style="color: white">Email</th>
+              <td>
+                <input type="text" name="email" placeholder="enter email" />
+              </td>
+            </tr>
+            <tr>
+              <th style="color: white">Password</th>
+              <td>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="enter password"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th style="color: white">Gender</th>
+              <td>
+                <div class="gender">
+                  <label
+                    ><input type="radio" name="gender" value="male" />
+                    Male</label
+                  >
+                  <label
+                    ><input type="radio" name="gender" value="female" />
+                    Female</label
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th style="color: white">Languages</th>
+              <td>
+                <div class="language">
+                  <label
+                    ><input type="checkbox" name="language" value="english" />
+                    English</label
+                  >
+                  <label
+                    ><input type="checkbox" name="language" value="telugu" />
+                    Telugu</label
+                  >
+                  <label
+                    ><input type="checkbox" name="language" value="hindi" />
+                    Hindi</label
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td><input type="submit" value="Sign Up" /></td>
+            </tr>
+          </table>
+          <div class="login-link">
+            Already registered? <a href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

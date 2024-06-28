@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Management System</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: url("backgr.jpg");
+        background-size: cover;
+        color: black;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #header {
+        height: 110px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        top: 0;
+      }
+
+      #header ul li {
+        display: inline-block;
+        margin: 0px 30px;
+        margin-top: 10px;
+        padding: 5px 20px;
+        font-size: 21px;
+        font-weight: bold;
+      }
+
+      .headerContent {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 100px;
+        padding-right: 60px;
+        font-size: 25px;
+      }
+
+      .headerContent a {
+        padding: 5px 20px;
+      }
+
+      .headerContent a:hover {
+        font-weight: bold;
+        border: 1px solid white;
+        border-radius: 3px;
+        padding: 5px 20px;
+      }
+
+      .logoContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding-top: 10px;
+      }
+
+      .logoName {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-weight: bold;
+        font-size: 45px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      #body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+      }
+
+      #footer {
+        display: flex;
+        height: 300px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+      }
+
+      .accessCard {
+        width: 500px;
+        padding: 40px;
+        margin: 10px;
+        border: 2px solid rgb(63, 59, 59);
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.165);
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .accessCard a {
+        color: white;
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: bold;
+      }
+
+      .accessCard:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div class="logoContent">
+        <img src="logo.png" height="120" />
+        <a href="homepage.html" class="logoName">DMS</a>
+      </div>
+      <div class="headerContent">
+        <a href="homepage.html">Home</a>
+        <a href="userAccess.html">User</a>
+        <a href="adminAccess.html">Admin</a>
+        <a href="document.html">Document</a>
+      </div>
+    </div>
+    <div id="body">
+      <div class="container">
+        <div class="accessCard">
+          <a href="signup.html">User Signup</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="accessCard">
+          <a href="login.html">User Login</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -66,8 +66,6 @@
 			a{
 				color: white;
 				text-decoration: none;
-                        font-weight: 600;
-                        font-size: 30px;
 			}
 			#body{
 				height: 500px;
@@ -87,7 +85,7 @@
                         height: 60vh;
                         width: 100%;
                   }
-                  .signupForm {
+                  .loginForm {
                         background-color: #1714146b;
                         padding: 50px;
                         
@@ -97,36 +95,36 @@
                         text-align: center;
                   }
 
-                  .signupForm h2 {
+                  .loginForm h2 {
                       color: #fff;
                       margin-bottom: 20px;
                       font-size: 30px;
                   }
 
-                  .signupForm table {
+                  .loginForm table {
                       width: 100%;
                   }
 
-                  .signupForm th {
+                  .loginForm th {
                       color: #fff;
                       text-align: left;
                       padding-bottom: 10px;
                       font-size: 20px;
                   }
 
-                  .signupForm td {
+                  .loginForm td {
                       padding-bottom: 10px;
                   }
 
-                  .signupForm input[type="text"],
-                  .signupForm input[type="password"] {
+                  .loginForm input[type="text"],
+                  .loginForm input[type="password"] {
                       width: 100%;
                       padding: 10px;
                       border: 1px solid #ccc;
                       border-radius: 5px;
                   }
 
-                  .signupForm input[type="submit"] {
+                  .loginForm input[type="submit"] {
                       background-color: #598de7;
                       color: white;
                       border: none;
@@ -138,8 +136,24 @@
                       width: 100%;
                   }
 
-                  .signupForm input[type="submit"]:hover {
+                  .loginForm input[type="submit"]:hover {
                         background-color: #1546a8;
+                  }
+                  .register-link {
+                        margin-top: 15px;
+                        color: white;
+                        font-size: 18px;
+                  }
+
+                  .register-link a {
+                      color: #fafafb;
+                      text-decoration: none;
+                      font-weight: bold;
+                  }
+
+                  .register-link a:hover {
+                      text-decoration: underline;
+                      color: #598de7;
                   }
 			
 		</style>
@@ -152,20 +166,18 @@
                               <a href="homepage.html" class="logoName">DMS</a>
                   </div>
 			<div class="headerContent">
-				<a href="user.html">User</a>
-				<a href="access.html">Access</a>
+                        <a href="homepage.html">Home</a>
+				<a href="userAccess.html">User</a>
+                        <a href="adminAccess.html">Admin</a>
 				<a href="document.html">Document</a>
                   </div>
 		</div>
 		<div id="body">
 			<div class="container">
-                        <div class="signupForm">
-                              <h2 >Sign Up </h2>
+                        <div class="loginForm">
+                              <h2 >Admin Login</h2>
                               <table>
-                                    <tr>
-                                          <th style="color: white;">Name</th>                                           
-                                          <td><input type="text" name="name" placeholder="enter your name"></td>
-                                    </tr>
+
                                     <tr>
                                           <th style="color: white;">Username</th>
                                           <td><input type="text" name="username" placeholder="enter username"></td>
@@ -176,16 +188,18 @@
                                     </tr>
                                     <tr>
                                           <th></th>
-                                          <td><input type="submit" value="Sign Up	"></td>
+                                          <td><input type="submit" value="Login	"></td>
                                     </tr>
+                                    
+                                    
                               </table>
+                              <div class="register-link">
+                                    Dont have an account? <a href="adminRegister.html">SignUp</a>
+                              </div>
                         </div>
 				
 			</div>
 		</div>
-		<div id="footer">
-			
-				
-		</div>
+            
 	</body>
 </html>
